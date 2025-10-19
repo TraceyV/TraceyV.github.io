@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    line-height: 2em;
+    background-color: maroon;
+    color: white;
+    text-align: center;
+}
+
+#projectTitle {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 50px;
+    color: black;
+}
+
+.mainSPA {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.mockupPics {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.mainSPA:hover, .mockupPics:hover {
+    transform: scale(1.4);
+}
+
+#containerA {
+    text-align: right;
+    margin-left: 20px;
+    height: 500px;
+    overflow-y: scroll;
+    width: 95%;
+    text-align: center
+}
+
+#containerB {
+    gap: 50px;
+    margin-right: 20px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+#containerB img {
+    width: 300px;
+    height: 300px;
+}
+
+#containerAB {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-style: solid 5px;
+    height: 500px;
+    overflow: hidden;
+}
+
+#containerC {
+    padding-top: 50px;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+
+    p {
+        margin: 10px;
+    }
+
+    #containerAB {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    #containerA {
+        margin-left: 0;
+    }
+    
+    #containerB {
+        margin-right: 0;
+    }
+
+    #containerB img {
+        margin: 50px;
+    }
+
+    #containerC {
+        margin: 0;
+        height: 500px;
+        overflow-y: scroll;
+    }
+
+}

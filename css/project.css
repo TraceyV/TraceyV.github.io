@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* bg */
+/* #body1 {
+    background: no-repeat url(/web5/portfolio/projectImg/bg1.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(221, 213, 213);
+    z-index: -1;
+}
+
+#body2 {
+    background: no-repeat url(/web5/portfolio/projectImg/bg2.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(221, 213, 213);
+    z-index: -1;
+}
+
+#body3 {
+    background: no-repeat url(/web5/portfolio/projectImg/bg3.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(221, 213, 213);
+    z-index: -1;
+}
+
+#body4 {
+    background: no-repeat url(/web5/portfolio/projectImg/bg4.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(221, 213, 213);
+    z-index: -1;
+}
+
+#body5 {
+    background: no-repeat url(/web5/portfolio/projectImg/bg5.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(221, 213, 213);
+    z-index: -1;
+}
+
+#body6 {
+    background: no-repeat url(/web5/portfolio/projectImg/bg6.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(221, 213, 213);
+    z-index: -1;   
+} */
+
+
+#projectTitle {
+    text-align: center;
+    padding-top: 200px;
+    font-size: 50px;
+    color: black;
+}
+
+/* Menu for Project Info */
+#containerOption {
+    display: flex;
+    gap: 20px;
+    background-color: brown;
+    border-radius: 50px;
+}
+
+.options a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-family: "Potta One", system-ui;
+    font-size: 40px;
+}
+
+.options a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 5px;
+    background-color: white;
+    transition: width 0.5s ease-in-out;
+    transform: translate(-50%);
+}
+
+.options a:hover::after {
+    width: 100%;
+}
+
+/* Actual Info */
+
+#detailsA {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    margin: 100px;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    background-color: maroon;
+    color: white;
+
+}
+
+.details {
+    max-width: 500px;
+    line-height: 1.2;
+    /* readibility purposes */
+    font-size: 20px;
+}
+
+
+#softwareUsed {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 100px;
+}
+
+/* draft img */
+.draft {
+    width: 300px;
+    height: 350px;
+    transform: rotate(-90deg);
+    margin-left: 25px;
+}
+
+/* outcome img */
+.outcome {
+    width: 400px;
+    height: 350px;
+    object-fit: contain
+}
+
+/* software Used */
+#softwareUsed {
+    gap: 20px;
+}
+
+#softwareUsed img {
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+/* Project Pic */
+
+#projectPic {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#projectPic img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+#projectPic img:hover {
+    transform: scale(1.2);
+}
+
+#infoSections {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Buttons */
+
+#buttonProjects {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-family: "Potta One", system-ui;
+    font-size: 20px;
+}
+
+.buttons a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 5px;
+    background-color: white;
+}
+
+#previous {
+    margin-left: 20px;
+}
+
+#next {
+    margin-right: 20px;
+}
+
+/* prevent stretching of img */
+#figma {
+    width: 50px;
+    object-fit: contain;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Project Title */
+    #projectTitle {
+        font-size: 30px;
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+
+    /* Basic Info - About, Data, Software Used */
+    #detailsA {
+        display: block;
+        margin: 0;
+    }
+
+    #projectPic {
+        margin: 0;
+    }
+
+    section h2,
+    .details {
+        margin: 5px
+    }
+
+    #softwareUsed img {
+        margin-left: 20px;
+    }
+
+    /* Process and Challenges */
+    #containerDetails section {
+        display: block;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .pics {
+        max-width: 300px;
+        max-height: auto;
+    }
+
+
+    /* Solution and Outcome */
+    .outcome {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ytVid {
+        width: auto;
+        height: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1279px) {
+
+    #detailsA p,
+    #containerDetails p {
+        font-size: 25px;
+
+    }
+
+    #containerDetails {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    #containerDetails section {
+        display: block;
+        gap: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #containerDetails section {
+        max-height: 1500px;
+        overflow-y: scroll;
+        max-width: 1000px;
+    }
+
+    .draft,
+    .outcome {
+        width: 750px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Trading cards img */
+    .outcomeCards {
+        width: auto;
+        height: auto;
+    }
+
+    .details {
+        max-width: 1000px;
+    }
+
+    .pics {
+        max-width: 600px;
+        max-height: 700px;
+    }
+
+    /* YouTube video for Project 9 */
+    .ytVid {
+        width: auto;
+        height: auto;
+    }
+}
