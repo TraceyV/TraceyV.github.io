@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 11</title>
+    <link rel="icon" type="image/x-icon" href="/web5/portfolio/img/logo.png">
+    <link rel="stylesheet" href="/web5/portfolio/css/app.css">
+    <link rel="stylesheet" href="/web5/portfolio/css/project.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Micro+5&family=Oswald:wght@200..700&family=Potta+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="onTop">
+        <section id="logo">
+            <img src="/web5/portfolio/img/logo.png" alt="">
+        </section>
+        <nav>
+            <section id="desktop">
+                <li><a href="/web5/portfolio/work.html">&#8678; Back</a></li>
+                <li><a href="/web5/portfolio/index.html">Home</a></li>
+                <li><a href="/web5/portfolio/about.html">About</a></li>
+                <li><a href="/web5/portfolio/work.html">Work</a></li>
+                <li><a href="/web5/portfolio/contact.html">Contacts</a></li>
+            </section>
+            <section id="mobile">
+                <li><a href="/web5/portfolio/work.html">&#8678; Back</a></li>
+                <li><a href="/web5/portfolio/index.html">Home</a></li>
+                <li><a href="/web5/portfolio/about.html">About</a></li>
+                <li><a href="/web5/portfolio/work.html">Work</a></li>
+                <li><a href="/web5/portfolio/contact.html">Contacts</a></li>
+            </section>
+            <section class="hamburgerLines" onclick="myFunction(this)">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </section>
+        </nav>
+    </div>
+
+    <div>
+        <h1 id="projectTitle">SVG Animation</h1>
+    </div>
+
+    <div id="detailsA">
+        <div id="projectPic"><img src="/web5/portfolio/projectImg/svgAnim.png" alt=""></div>
+
+        <div id="infoSections">
+            <section>
+                <h2>&nbsp;About</h2>
+                <p class="details"><br>This was a fun project to do and it's about making moving arts - SVG Animation.
+                    I had to pick a subject to based on, and I decided to choose our lovely campus - Vanier College.
+                    Aside from drawing the art, I also had to use HTML and CSS to start animating it.</p>
+            </section>
+
+            <section>
+                <h2>&nbsp;Date</h2>
+                <p class="details"><br>February 2025</p>
+            </section>
+
+            <section>
+                <h2>&nbsp;Software used</h2>
+                <div id="softwareUsed">
+                    <img class="softwareImg" src="/web5/portfolio/img/illustrator.png" alt="">
+                    <img class="softwareImg" src="/web5/portfolio/img/html.png" alt="">
+                    <img class="softwareImg" src="/web5/portfolio/img/css.png" alt="">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="containerDetails">
+        <section>
+            <h2>&nbsp;Process & Challenges</h2>
+            <p class="details"><br>I basically had to look at Google Maps to get the specific angle that I want to
+                illustrate and I started from there.
+                <br><br>Vanier College is a big campus with lots of big trees and windows so I knew that illustrating
+                those
+                would be a big challenge for me
+                in terms of testing my patience and overall skills.
+            </p><br>
+            <img class="outcome" src="/web5/portfolio/projectImg/svgReference.png" alt="">
+            <img class="outcome" src="/web5/portfolio/projectImg/svgReferenceII.png" alt="">
+
+        </section>
+
+        <section>
+            <h2>&nbsp;Solution & Outcome</h2>
+            <p class="details"><br>
+                To solve the problem of Vanier having so many trees and windows, I did not draw
+                every tree that existed in that campus and I made it in a season where the tree leaves are dead
+                (Fall-Winter)
+                As for the windows, I decided to make copies of the same initial windows that were drawn and made slight
+                changes to make them different. I also added gradients and shadows to make the art more interesting.
+                After a few hours of concentrating and lots of crashing and lagging later, I finished and it was time to
+                animate the art. <br><br>
+                I exported the Illustrator file into SVG and started working on VS Code. In terms of the actual
+                animation, I
+                made the branch in front to slighty move up and down, I played around with the opacity of the sky and
+                the
+                shadow to make it look like a transition between daytime to night.
+                The stars are also blinking in the sky.
+            </p><br>
+            <img class="outcome" src="/becoming2/img/SVGImproved.png" alt="">
+        </section>
+    </div>
+
+
+    <div id="buttonProjects">
+        <button id="previous" class="buttons"><a href="/web5/portfolio/projects/project10.html">Previous
+                Project</a></button>
+        <button id="next" class="buttons"><a href="/web5/portfolio/projects/project12.html">Next Project</a></button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Copyright by Tracey Vergara - All Rights Reserved</p>
+    </footer>
+    <!-- let the background be a texturized image that repeats of the project -->
+    <script src="/web5/hamburgerMenu.js" defer></script>
+</body>
+
+</html>
